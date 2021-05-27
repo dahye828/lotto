@@ -57,5 +57,5 @@ fun getRandomLottoNumbers(): MutableList<Int> {
                 break
         }
     }
-        return lottoNumbers
+    return lottoNumbers
 }
