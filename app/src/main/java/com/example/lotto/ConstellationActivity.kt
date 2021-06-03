@@ -27,9 +27,6 @@ class ConstellationActivity : AppCompatActivity() {
             val intent = Intent(this, ResultActivity::class.java)
             intent.putIntegerArrayListExtra("result", ArrayList(getShuffledLottoNumbersFromHash(dataPicker.month, dataPicker.dayOfMonth, dataPicker.year)))
             intent.putExtra("constellation", makeConstellationString(dataPicker.month, dataPicker.dayOfMonth))
-            intent.putExtra("constellationmonth", dataPicker.month)
-            intent.putExtra("constellationday", dataPicker.dayOfMonth)
-            intent.putExtra("constellationyear", dataPicker.year)
             startActivity(intent)
         }
 
